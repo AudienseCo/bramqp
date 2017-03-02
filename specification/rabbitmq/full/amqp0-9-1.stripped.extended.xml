@@ -71,7 +71,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <domain name="delivery-tag" type="longlong"/>
   <domain name="exchange-name" type="shortstr">
     <assert check="length" value="127"/>
-    <assert check="regexp" value="^[a-zA-Z0-9-_.:]*$"/>
+    <assert check="regexp" value="^[a-zA-Z0-9-_.: ]*$"/>
   </domain>
   <domain name="method-id" type="short"/>
   <domain name="no-ack" type="bit"/>
@@ -84,7 +84,7 @@ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <domain name="peer-properties" type="table"/>
   <domain name="queue-name" type="shortstr">
     <assert check="length" value="127"/>
-    <assert check="regexp" value="^[a-zA-Z0-9-_.:]*$"/>
+    <assert check="regexp" value="^[a-zA-Z0-9-_.: ]*$"/>
   </domain>
   <domain name="redelivered" type="bit"/>
   <domain name="message-count" type="long"/>
